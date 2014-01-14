@@ -29,6 +29,6 @@ pl.ylabel("Y")
 pl.legend( (p1,p2), ("y1","y2"), loc=(0.7,0.85), frameon=False )
 
 # comment the below line to get rid of screen display
-pl.show()
+# pl.show()
 # uncomment the below line to save as a pdf
-#pl.savefig("simpleplot.pdf")
+pl.savefig("simpleplot.pdf")

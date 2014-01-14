@@ -17,11 +17,12 @@ data = np.loadtxt("infile3.txt",comments="#")
 x = data[:,0]
 y1 = data[:,1]
 y2 = data[:,2]
-
+y3 = np.sin(x) ** 2 * np.cos(x)
 
 # make the plot
 p1, = pl.plot(x,y1,"r",linewidth=2.5)
 p2, = pl.plot(x,y2,"b",linewidth=2.5)
+p3, = pl.plot(x,y3,"g",linewidth=2.5)
 
 # prepare x and y ranges
 xmin = 0.0
@@ -58,8 +59,8 @@ pl.ylabel("Y",labelpad=-5)
 # loc is the location of the legend in a
 # coordinate system from (0,0) to (1,1)
 # frameon=False turns of the stupid box around the legend
-pl.legend( (p1,p2), ("y1","y2"), 
-           loc=(0.4,0.03), frameon=False )
+pl.legend( (p1,p2,p3), ("y1","y2","y3"), 
+           loc=(0.4,0.025), frameon=False, labelspacing = 0.25 )
 
 pl.text(0.14,0.88,"LaTeX: $\\Phi$",fontsize=30,
         horizontalalignment="left",rotation="horizontal",
