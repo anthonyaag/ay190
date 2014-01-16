@@ -254,7 +254,7 @@ pl.ylabel("Y",labelpad=12)
 # coordinate system from (0,0) to (1,1)
 # frameon=False turns of the stupid box around the legend
 pl.legend( (p1,p2,p3,p4,p5), ("Linear","Quadratic","Cubic Hermite","Natrual Cubic", "Data"), 
-           loc=(0.05,0.6), frameon=False, labelspacing = 0.25 )
+           loc=(0.05,0.55), frameon=False, labelspacing = 0.25 )
 
 #pl.text(0.14,0.88,"LaTeX: $\\Phi$",fontsize=30,
 #        horizontalalignment="left",rotation="horizontal",
